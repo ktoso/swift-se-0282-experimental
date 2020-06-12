@@ -63,7 +63,7 @@ For an introduction to the APIs provided by this package, for now please see the
 
 In addition to the APIs originally proposed, this package also provides a `ManagedAtomic` generic class. This is a memory-safe reference type whose instances hold a single atomic value. This class provides an easy-to-use, safe interface that exactly matches the API of an eventual move-only atomic generic type. However, it requires allocating a separate class instance for every atomic value, which can add significant overhead compared to the lightweight, unsafe pointer-based `UnsafeAtomic`.
 
-Ultimately, we expect both `ManagedAtomic` and `UnsafeAtomic` will be replaced by a single move-only atomic struct. Once that becomes possible, module will likely get proposed as a core standard library component through the Swift Evolution process. (And rewritten to use native Swift builtins rather than C facilities.)
+Ultimately, we expect both `ManagedAtomic` and `UnsafeAtomic` will be replaced by a single move-only atomic struct. Once that becomes possible, this module may get adopted as a core standard library component through the Swift Evolution process. (And rewritten to use native Swift builtins rather than C facilities.)
 
 ## Contributing
 
